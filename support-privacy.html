@@ -1,131 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bench Reference - Support & Privacy Policy</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23f0c850' width='100' height='100' rx='22'/><g fill='none' stroke='%23111' stroke-width='2.5'><path d='M15 35h70M50 12v23M50 35l-35 0 35 53 35-53z'/><path d='M25 12h50l13 23H12zM30 35l20 53m0-53l20 53'/></g></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #0f0f0f;
-      color: #e8e4e0;
-      line-height: 1.7;
-      padding: 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .header { text-align: center; padding: 40px 0 30px; border-bottom: 1px solid #333; margin-bottom: 40px; }
-    .logo { width: 80px; height: 80px; margin: 0 auto 20px; background: linear-gradient(135deg, #f0c850, #d4a843); border-radius: 18px; display: flex; align-items: center; justify-content: center; }
-    .logo svg { width: 50px; height: 50px; }
-    h1 { color: #f0c850; font-size: 32px; margin-bottom: 8px; }
-    .tagline { color: #888; font-size: 16px; }
-    .nav { display: flex; justify-content: center; gap: 20px; margin-top: 25px; flex-wrap: wrap; }
-    .nav a { color: #f0c850; text-decoration: none; padding: 8px 16px; border: 1px solid #f0c850; border-radius: 20px; font-size: 14px; transition: all 0.2s; }
-    .nav a:hover { background: #f0c850; color: #0f0f0f; }
-    section { margin-bottom: 50px; }
-    h2 { color: #f0c850; font-size: 22px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #333; }
-    h3 { color: #f0c850; font-size: 17px; margin: 25px 0 10px; }
-    p { margin-bottom: 15px; color: #ccc; }
-    ul { margin: 15px 0 15px 25px; color: #ccc; }
-    li { margin-bottom: 8px; }
-    a { color: #f0c850; }
-    .contact-box { background: #1a1a1a; border: 1px solid #333; border-radius: 12px; padding: 25px; margin: 20px 0; }
-    .contact-box h3 { margin-top: 0; }
-    .faq-item { background: #1a1a1a; border: 1px solid #333; border-radius: 8px; padding: 20px; margin-bottom: 15px; }
-    .faq-item strong { color: #f0c850; display: block; margin-bottom: 8px; }
-    footer { text-align: center; padding: 40px 0 20px; color: #666; font-size: 14px; border-top: 1px solid #333; margin-top: 40px; }
-    .updated { text-align: center; color: #666; font-size: 14px; margin-bottom: 40px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bench Reference - Support & Privacy</title>
+    <style>
+        :root { --bg: #0f0f0f; --card: #1a1a1a; --gold: #f0c850; --text: #e8e8e8; --muted: #999; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg); color: var(--text); max-width: 700px; margin: 0 auto; padding: 40px 20px; line-height: 1.6; }
+        h1 { color: var(--gold); font-size: 28px; margin-bottom: 4px; }
+        h2 { color: var(--gold); font-size: 20px; margin-top: 36px; margin-bottom: 12px; }
+        p { margin-bottom: 12px; }
+        .subtitle { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+        .card { background: var(--card); padding: 20px; border-radius: 12px; margin-bottom: 14px; }
+        .card strong { color: var(--gold); }
+        a { color: var(--gold); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .nav { display: flex; gap: 20px; margin: 20px 0; flex-wrap: wrap; }
+        .nav a { background: var(--card); padding: 10px 20px; border-radius: 8px; font-size: 14px; }
+        .divider { border: none; border-top: 1px solid #333; margin: 36px 0; }
+        .footer { margin-top: 40px; text-align: center; font-size: 12px; color: var(--muted); }
+        ul { padding-left: 20px; margin-bottom: 12px; }
+        li { margin-bottom: 6px; }
+    </style>
 </head>
 <body>
-  <div class="header">
-    <div class="logo">
-      <svg viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="3">
-        <path d="M15 35h70M50 12v23M50 35l-35 0 35 53 35-53z"/>
-        <path d="M25 12h50l13 23H12zM30 35l20 53m0-53l20 53"/>
-      </svg>
-    </div>
+
     <h1>Bench Reference</h1>
-    <p class="tagline">Professional Jeweler's Guide</p>
-    <nav class="nav">
-      <a href="#support">Support</a>
-      <a href="#privacy">Privacy Policy</a>
-      <a href="#faq">FAQ</a>
-    </nav>
-  </div>
+    <p class="subtitle">The Professional Jeweler's Pocket Guide</p>
 
-  <p class="updated">Last Updated: February 14, 2026</p>
+    <div class="nav">
+        <a href="#support">Support</a>
+        <a href="#faq">FAQ</a>
+        <a href="#privacy">Privacy Policy</a>
+    </div>
 
-  <section id="support">
-    <h2>Support</h2>
-    <p>Bench Reference is a comprehensive reference guide for professional jewelers and hobbyists, featuring information on gemstones, diamonds, metals, solders, ring sizes, stone settings, and more.</p>
-    <div class="contact-box">
-      <h3>Contact Us</h3>
-      <p>Have questions, feedback, or need assistance? We're here to help!</p>
-      <p><strong>Email:</strong> <a href="mailto:benchreferenceapp@gmail.com">benchreferenceapp@gmail.com</a></p>
-      <p>We typically respond within 24-48 hours.</p>
+    <!-- SUPPORT -->
+    <h2 id="support">Support</h2>
+    <div class="card">
+        <p>Need help with the app? Have a question, suggestion, or found an error?</p>
+        <p><strong>Email:</strong> <a href="mailto:benchreferenceapp@gmail.com">benchreferenceapp@gmail.com</a></p>
+        <p>We typically respond within 24-48 hours.</p>
     </div>
-  </section>
 
-  <section id="faq">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-item">
-      <strong>Is Bench Reference free to use?</strong>
-      <p>Yes! Bench Reference is completely free with no ads or in-app purchases.</p>
+    <!-- FAQ -->
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="card">
+        <p><strong>Does the app require internet?</strong></p>
+        <p>No. Bench Reference works 100% offline. All reference content is stored locally on your device.</p>
     </div>
-    <div class="faq-item">
-      <strong>Does the app work offline?</strong>
-      <p>Yes! Bench Reference works entirely offline. All reference content is included within the app—no internet connection required.</p>
+    <div class="card">
+        <p><strong>Is the app free?</strong></p>
+        <p>Yes. Bench Reference is completely free with no ads, no subscriptions, and no in-app purchases.</p>
     </div>
-    <div class="faq-item">
-      <strong>How do I report a bug or suggest a feature?</strong>
-      <p>Please email us at <a href="mailto:benchreferenceapp@gmail.com">benchreferenceapp@gmail.com</a> with details about the issue or your feature suggestion.</p>
+    <div class="card">
+        <p><strong>Is my data collected?</strong></p>
+        <p>No. We do not collect, store, or share any personal data. Everything stays on your device.</p>
     </div>
-    <div class="faq-item">
-      <strong>Is my data safe?</strong>
-      <p>Absolutely. We don't collect any personal data. See our Privacy Policy below for details.</p>
+    <div class="card">
+        <p><strong>I found incorrect information. How do I report it?</strong></p>
+        <p>Email us at <a href="mailto:benchreferenceapp@gmail.com">benchreferenceapp@gmail.com</a> and we'll review and correct it in the next update.</p>
     </div>
-  </section>
+    <div class="card">
+        <p><strong>Why does the app ask for camera or photo access?</strong></p>
+        <p>The My Notes feature lets you attach photos to your personal notes. You can take new photos with your camera or choose from your photo library. This is completely optional ‚Äî the app works fully without granting access, and your photos never leave your device.</p>
+    </div>
+    <div class="card">
+        <p><strong>Can I request new features or reference sections?</strong></p>
+        <p>Absolutely! We're always looking to improve. Send us your ideas by email.</p>
+    </div>
+    <div class="card">
+        <p><strong>What devices are supported?</strong></p>
+        <p>Bench Reference is available for iPhone and iPad running iOS 17 or later.</p>
+    </div>
 
-  <section id="privacy">
-    <h2>Privacy Policy</h2>
-    <h3>Introduction</h3>
-    <p>Bench Reference ("we," "our," or "the app") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our mobile application.</p>
-    <h3>Information We Collect</h3>
-    <p><strong>We do not collect any personal information.</strong></p>
-    <p>Bench Reference is designed with privacy in mind. The app:</p>
-    <ul>
-      <li>Does not require account registration</li>
-      <li>Does not collect names, email addresses, or contact information</li>
-      <li>Does not access your location</li>
-      <li>Does not access your camera, microphone, or photos</li>
-      <li>Does not use analytics or tracking tools</li>
-      <li>Does not contain advertisements</li>
-    </ul>
-    <h3>Local Data Storage</h3>
-    <p>The app stores your preferences (such as dark mode setting and text size) locally on your device using iOS's built-in storage system. This data:</p>
-    <ul>
-      <li>Never leaves your device</li>
-      <li>Is not transmitted to any servers</li>
-      <li>Is not accessible by us or any third parties</li>
-      <li>Can be deleted by uninstalling the app</li>
-    </ul>
-    <h3>Offline Functionality</h3>
-    <p>Bench Reference works entirely offline. All reference content is included within the app and no internet connection is required. The app does not connect to any external servers or transmit any data.</p>
-    <h3>Children's Privacy</h3>
-    <p>Bench Reference does not knowingly collect information from children under 13. The app is a reference tool intended for professional jewelers and hobbyists.</p>
-    <h3>Changes to This Policy</h3>
-    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date.</p>
-  </section>
+    <hr class="divider">
 
-  <footer>
-    <p>&copy; 2025 Brown Industry APP LLC. All rights reserved.</p>
-    <p style="margin-top: 10px;"><a href="mailto:benchreferenceapp@gmail.com">benchreferenceapp@gmail.com</a></p>
-  </footer>
+    <!-- PRIVACY POLICY -->
+    <h2 id="privacy">Privacy Policy</h2>
+    <p><em>Effective Date: February 2026</em></p>
+
+    <div class="card">
+        <p><strong>Data Collection</strong></p>
+        <p>Bench Reference does not collect any personal information. We do not require account registration, login, or any personal details to use the app.</p>
+    </div>
+    <div class="card">
+        <p><strong>Camera &amp; Photo Library Access</strong></p>
+        <p>Bench Reference may request access to your device's camera and photo library. This is used solely for the <strong>My Notes</strong> feature, which allows you to attach photos to your personal notes and entries.</p>
+        <ul>
+            <li>Camera and photo access is <strong>entirely optional</strong> ‚Äî the app functions fully without it</li>
+            <li>Photos you attach are stored <strong>locally on your device only</strong></li>
+            <li>Photos are <strong>never uploaded, transmitted, or shared</strong> with us or any third party</li>
+            <li>You can revoke camera or photo access at any time in your device's Settings</li>
+        </ul>
+    </div>
+    <div class="card">
+        <p><strong>Analytics &amp; Tracking</strong></p>
+        <p>The app does not use any analytics, tracking tools, or advertising frameworks. No third-party SDKs are included.</p>
+    </div>
+    <div class="card">
+        <p><strong>Local Storage</strong></p>
+        <p>User preferences (such as dark mode and font size), any notes you create, and any photos you attach are stored locally on your device only. This data is never transmitted to any server.</p>
+    </div>
+    <div class="card">
+        <p><strong>Internet Access</strong></p>
+        <p>The app does not require an internet connection. All reference content is included within the app. The only external links are optional buy links for 3D printing resins and this support page.</p>
+    </div>
+    <div class="card">
+        <p><strong>Children's Privacy</strong></p>
+        <p>The app does not knowingly collect information from children under 13. No data is collected from any user of any age.</p>
+    </div>
+    <div class="card">
+        <p><strong>Changes to This Policy</strong></p>
+        <p>If we update this privacy policy, changes will be reflected on this page with an updated effective date.</p>
+    </div>
+    <div class="card">
+        <p><strong>Contact</strong></p>
+        <p>Questions about this policy? Email us at <a href="mailto:benchreferenceapp@gmail.com">benchreferenceapp@gmail.com</a></p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Brown Industry APP LLC. All rights reserved.</p>
+    </div>
+
 </body>
 </html>
